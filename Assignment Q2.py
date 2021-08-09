@@ -34,11 +34,11 @@ where jobhist.deptno=dept.deptno and jobhist.empno=emp.empno"""
 
             if conn is not None:
                 cur.close()
-                conn.close()
+                con.close()
 
 
 if __name__=='__main__':
-    conn = None
+    con = None
     cur = None
     comp = Total_compensation()
     comp.compensation()
