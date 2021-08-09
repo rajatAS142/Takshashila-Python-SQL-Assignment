@@ -32,13 +32,13 @@ class employee_info:
             print("Something went wrong", e)
         finally:
 
-            if conn is not None:
+            if con is not None:
                 cur.close()
-                conn.close()
+                con.close()
 
 
 if __name__=='__main__':
-    conn = None
+    con = None
     cur = None
     employee = employee_info()
     employee.emp()
