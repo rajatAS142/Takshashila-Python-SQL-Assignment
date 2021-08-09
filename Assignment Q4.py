@@ -37,13 +37,13 @@ class employee_info:
 
         finally:
 
-            if conn is not None:
+            if con is not None:
                 cursor.close()
-                conn.close()
+                con.close()
 
 
 if __name__ == '__main__':
-    conn = None
+    con = None
     cur = None
     employee = employee_info()
     employee.emp()
